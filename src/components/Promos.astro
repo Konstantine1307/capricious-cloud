@@ -1,0 +1,25 @@
+---
+import Heading2 from '../components/Heading2.astro';
+import HotelCard from './cards/HotelCard.astro';
+---
+
+<section id='promos' class='bg-beige-darker pt-12 pb-24'>
+  <Heading2 heading2='Promos and offers' />
+  <div class='list-none grid grid-cols-1 md:grid-cols-3 px-12 gap-3'>
+    <HotelCard
+      imagePath='/src/assets/computer.jpg'
+      altText='Early Bird Discount'
+      bottomDescription='List your offers, promos, or special membership privileges and perks here to entice people to book your property.'
+    />
+    <HotelCard
+      imagePath='/src/assets/women-spa.jpg'
+      altText='Wellhall Members Club'
+      bottomDescription='List your offers, promos, or special membership privileges and perks here to entice people to book your property.'
+    />
+    <HotelCard
+      imagePath='/src/assets/person-luggage.jpg'
+      altText='Book 3 nights, get 1 free'
+      bottomDescription='List your offers, promos, or special membership privileges and perks here to entice people to book your property.'
+    />
+  </div>
+</section>

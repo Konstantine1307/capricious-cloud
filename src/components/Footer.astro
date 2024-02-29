@@ -1,0 +1,135 @@
+---
+import FooterCard from './cards/FooterCard.astro';
+---
+
+<footer class='bg-brown-dark pt-6' id='contact'>
+  <a
+    href='/'
+    class='w-80 mt-8 pl-4 font-serif-pro text-xl text-brown-dark text-white'
+    >The Wellhall</a
+  >
+  <div class='grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto py-20'>
+    <FooterCard title='Reservation Office'>
+      <div>
+        <span
+          class='text-sm font-light'
+          aria-label='Reservation Office Address'
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='1.5em'
+            height='1.5em'
+            viewBox='0 0 24 24'
+            class='inline'
+            aria-hidden='true'
+          >
+            <path
+              fill='white'
+              d='M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7'
+            ></path>
+          </svg>
+          123 Anywhere St., Any City ST 12345
+        </span>
+      </div>
+      <div>
+        <span
+          class='text-sm font-light'
+          aria-label='Reservation Office Telephone Number'
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='1.5rem'
+            height='1.5rem'
+            viewBox='0 0 36 36'
+            class='inline'
+            aria-hidden='true'
+            ><path
+              fill='white'
+              d='M25 4H11a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m-6 26h-2v-2h2Zm-8-4V6h14v20Z'
+              class='clr-i-solid clr-i-solid-path-1'></path><path
+              fill='none'
+              d='M0 0h36v36H0z'></path></svg
+          >
+          <a href='tel:1123-456-7890'>1123-456-7890</a></span
+        >
+      </div>
+      <div>
+        <span class='text-sm font-light'
+        aria-label='Reservation Office Email'  
+        >
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='1.5rem'
+            height='1.5rem'
+            viewBox='0 0 24 24'
+            class='inline'
+            aria-hidden='true'
+            ><path
+              fill='white'
+              d='M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z'
+            ></path></svg
+          >
+          <a href='mailto:hotel@template.com'>hotel@template.com</a>
+        </span>
+      </div>
+    </FooterCard>
+    <FooterCard title='Office Hours'>
+      <div class='text-sm font-light'>
+        <p class='text-sm'>Monday to Friday</p>
+        <span>9:00 am to 6:00 pm</span>
+      </div>
+      <div class='text-sm font-light'>
+        <p class='text-sm'>Monday to Saturday</p>
+        <span>9:00 am to 6:00 pm</span>
+      </div>
+    </FooterCard>
+    <FooterCard title='Get Social'>
+      <div>
+        <a href='/' aria-label='Hotel Facebook Account Link'
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='2rem'
+            height='2rem'
+            viewBox='0 0 24 24'
+            class='inline'
+            aria-hidden='true'
+            ><path
+              fill='white'
+              d='M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02'
+            ></path></svg
+          ></a
+        >
+        <a href='/' aria-label='Hotel Twitter Account Link'
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='2rem'
+            height='2rem'
+            viewBox='0 0 512 512'
+            class='inline'
+            aria-hidden='true'
+            ><path
+              fill='white'
+              d='M389.2 48h70.6L305.6 224.2L487 464H345L233.7 318.6L106.5 464H35.8l164.9-188.5L26.8 48h145.6l100.5 132.9zm-24.8 373.8h39.1L151.1 88h-42z'
+            ></path></svg
+          >
+        </a>
+        <a href='/' aria-label='Hotel Instagram Hotel Link'
+          ><svg
+            xmlns='http://www.w3.org/2000/svg'
+            width='2rem'
+            height='2rem'
+            viewBox='0 0 24 24'
+            class='inline'
+            aria-hidden='true'
+            ><path
+              fill='white'
+              d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3'
+            ></path></svg
+          ></a
+        >
+      </div>
+      <div class='border border-1 border-white rounded-3xl p-2 w-fit mx-auto'>
+        <p class='text-xs'>Tag us in your photos!</p>
+      </div>
+    </FooterCard>
+  </div>
+</footer>

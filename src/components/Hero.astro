@@ -1,0 +1,82 @@
+---
+import '@fontsource/source-serif-pro/200.css';
+import '@fontsource/source-serif-pro/300.css';
+import '@fontsource/source-serif-pro/400.css';
+
+import { Image } from 'astro:assets';
+import heroImage from '../assets/Hero.jpg';
+import NavBar from '../components/NavBar.astro';
+---
+
+<section class='hero-container'>
+  <!-- <NavBar /> -->
+  <Image
+    src={heroImage}
+    alt='View of the hotel'
+    class='hero-image'
+    loading='eager'
+  />
+  <div class='hero-text'>
+    <small class='uppercase'>Welcome To</small>
+    <h1>The Wellhall</h1>
+    <p>Resort and Spa Hotel</p>
+    <div class='md:pt-10'>
+      <button class='bg-beige-light px-4 py-1 text-sm text-brown-dark'
+        >Learn more</button
+      >
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+
+    & .hero-text {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1rem;
+     
+
+      & h1 {
+        font-size: 3.25rem;
+        line-height: 2.25rem;
+        font-family: 'Source Serif Pro', serif;
+        font-weight: 200;
+
+        @media (768px <= width <= 1024px) {
+          font-size: 4.75rem;
+          line-height: 1;
+        }
+
+        @media (1024px < width) {
+          font-size: 5.75rem;
+          line-height: 1;
+        }
+      }
+
+      & p {
+        font-size: 1.25rem;
+        line-height: 1.75;
+        font-family: 'Source Serif Pro', serif;
+        font-weight: 300;
+
+        @media (768px <= width) {
+          font-size: 1.875rem;
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+</style>
+
+

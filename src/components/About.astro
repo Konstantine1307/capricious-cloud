@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets';
+import woman from '../assets/about-woman.jpg';
+---
+
+<section
+  id='about'
+  class='grid grid-cols-1 md:grid-cols-2 gap-8 py-20 p-12  md:max-w-4xl mx-auto'
+>
+  <div class='flex flex-col space-y-6 md:space-y-20'>
+    <p
+      class='welcome font-serif-pro font-light text-3xl md:text-4xl lg:text-5xl leading-snug'
+    >
+      Welcome to your luxurious home away from home
+    </p>
+    <p class='font-light'>
+      Write a paragraph that talks about your brand or property here. Convince
+      your prospective clients to choose you and your offerings by highlighting
+      the qualities that set you apart from the competition. Your audience is
+      already on your website, so push a little bit harder to seal the deal!
+    </p>
+  </div>
+  <div class='mx-auto md:ml-auto md:mr-2.5'>
+    <Image src={woman} alt='Woman by the pool' class='object-cover w-60 h-96' loading='lazy'/>
+  </div>
+</section>
+

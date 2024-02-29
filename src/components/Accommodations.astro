@@ -1,0 +1,107 @@
+---
+import { Image } from 'astro:assets';
+import Heading2 from '../components/Heading2.astro';
+import HotelCard from './cards/HotelCard.astro';
+import deLuxeSeaView from '../assets/ocean-view-room.jpg';
+import woodKitchen from '../assets/wood-kitchen.jpg';
+import whiteBathtub from '../assets/white-bathtub.jpg';
+
+// const images = {
+//   './assets/bedroom.jpg': () => import('./assets/bedroom.jpg'),
+//   './assets/ocean-view-room.jpg': () => import('./assets/ocean-view-room.jpg'),
+//   './assets/hotel-room.jpg': () => import('./assets/hotel-room.jpg'),
+// };
+---
+
+<section id='accommodation' class='py-12'>
+  <div class='bg-beige-darker py-12'>
+    <Heading2 heading2='Accommodations' />
+    <div
+      class='grid grid-cols-1 md:grid-cols-3 px-12 gap-3'
+    >
+      <HotelCard
+        imagePath='/src/assets/bedroom.jpg'
+        altText='De Luxe room'
+        topDescription='2 adults | 1 child below 7'
+        bottomDescription='From ¢189 a night'
+      />
+      <HotelCard
+        imagePath='/src/assets/ocean-view-room.jpg'
+        altText='De Luxe Sea View room'
+        topDescription='2 adults | 1 child below 7'
+        bottomDescription='From ¢229 a night'
+      />
+      <HotelCard
+        imagePath='/src/assets/hotel-room.jpg'
+        altText='The Welhall Family Suite'
+        topDescription='2 adults | 1 child below 7'
+        bottomDescription='From ¢329 a night'
+      />
+    </div>
+  </div>
+
+  <section
+    class='grid grid-cols-1 md:grid-cols-2 gap-8 py-20 px-12 md:max-w-4xl mx-auto'
+  >
+    <div class='flex flex-col justify-between'>
+      <p
+        class='welcome font-serif-pro font-light text-3xl md:text-4xl lg:text-5xl leading-snug'
+      >
+        The Family Suite
+      </p>
+      <p class='font-light'>
+        Write a paragraph that talks about your brand or property here. Convince
+        your prospective clients to choose you and your offerings by
+        highlighting the qualities that set you apart from the competition. Your
+        audience is already on your website, so push a little bit harder to seal
+        the deal!
+      </p>
+    </div>
+    <div class='mx-auto flex-1'>
+      <Image
+        src={deLuxeSeaView}
+        alt='Woman by the pool'
+        class='object-cover w-full h-full'
+      />
+
+      <div class='border border-1 border-brown-dark mt-6 p-3'>
+        <small>
+          An intriguing caption that describes the room goes here. Use a
+          flattering photo, then describe away!
+        </small>
+      </div>
+    </div>
+  </section>
+
+  <div class='grid grid-cols-1 md:grid-cols-3 gap-4 px-12 my-8 py-12'>
+    <div class='md:col-span-1 flex flex-col'>
+      <Image
+        src={woodKitchen}
+        alt='De Luxe Sea View Room '
+        class='object-cover w-full h-full'
+      />
+      <div class='border border-1 border-brown-dark mt-6 p-3 flex-1'>
+        <small>
+          An intriguing caption that describes the room goes here. Use a
+          flattering photo, then describe away!
+        </small>
+      </div>
+    </div>
+    <div class='md:col-span-2 flex flex-col'>
+      <div class='flex-1'>
+        <Image
+          src={whiteBathtub}
+          alt='De Luxe Sea View Room '
+          class='object-cover w-full h-full'
+        />
+      </div>
+
+      <div class='border border-1 border-brown-dark mt-6 p-3 flex-1'>
+        <small>
+          An intriguing caption that describes the room goes here. Use a
+          flattering photo, then describe away!
+        </small>
+      </div>
+    </div>
+  </div>
+</section>

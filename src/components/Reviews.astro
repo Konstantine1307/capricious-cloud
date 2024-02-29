@@ -1,0 +1,31 @@
+---
+import '@fontsource/source-serif-pro/200.css';
+import '@fontsource/source-serif-pro/300.css';
+import '@fontsource/source-serif-pro/400.css';
+
+import reviews from '../assets/Reviews.jpg';
+import ReviewCard from './cards/ReviewCard.astro';
+---
+
+<section
+  id='reviews'
+  class='header relative h-full min-h-[700px] bg-cover bg-no-repeat bg-center'
+  style=`background-image: url("${reviews.src}");`
+>
+  <div
+    class='z-10 text-white min-h-[700px] list-none grid grid-cols-1 md:grid-cols-3 md:content-end px-8 md:px-0'
+  >
+    <ReviewCard
+      description="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+      signature='Santa Solana Post'
+    />
+    <ReviewCard
+      description="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+      signature="Mariana's Luxe Travels"
+    />
+    <ReviewCard
+      description="Boost your product and service's credibility by adding testimonials from your clients. People love recommendations so feedback from others who've tried it is invaluable."
+      signature='Farhill Journal'
+    />
+  </div>
+</section>
