@@ -2,9 +2,9 @@
 import { Image } from 'astro:assets';
 import Heading2 from '../components/Heading2.astro';
 import HotelCard from './cards/HotelCard.astro';
-import deLuxeSeaView from '../assets/ocean-view-room.jpg';
-import woodKitchen from '../assets/wood-kitchen.jpg';
-import whiteBathtub from '../assets/white-bathtub.jpg';
+import deLuxeSeaView from '../assets/ocean-view-room.webp';
+import woodKitchen from '../assets/wood-kitchen.webp';
+import whiteBathtub from '../assets/white-bathtub.webp';
 
 // const images = {
 //   './assets/bedroom.jpg': () => import('./assets/bedroom.jpg'),
@@ -20,19 +20,19 @@ import whiteBathtub from '../assets/white-bathtub.jpg';
       class='grid grid-cols-1 md:grid-cols-3 px-12 gap-3'
     >
       <HotelCard
-        imagePath='/src/assets/bedroom.jpg'
+        imagePath='/src/assets/bedroom.webp'
         altText='De Luxe room'
         topDescription='2 adults | 1 child below 7'
         bottomDescription='From ¢189 a night'
       />
       <HotelCard
-        imagePath='/src/assets/ocean-view-room.jpg'
+        imagePath='/src/assets/ocean-view-room.webp'
         altText='De Luxe Sea View room'
         topDescription='2 adults | 1 child below 7'
         bottomDescription='From ¢229 a night'
       />
       <HotelCard
-        imagePath='/src/assets/hotel-room.jpg'
+        imagePath='/src/assets/hotel-room.webp'
         altText='The Welhall Family Suite'
         topDescription='2 adults | 1 child below 7'
         bottomDescription='From ¢329 a night'
@@ -45,7 +45,7 @@ import whiteBathtub from '../assets/white-bathtub.jpg';
   >
     <div class='flex flex-col justify-between'>
       <p
-        class='welcome font-serif-pro font-light text-3xl md:text-4xl lg:text-5xl leading-snug'
+        class='font-serif-pro font-light text-3xl md:text-4xl lg:text-5xl leading-snug'
       >
         The Family Suite
       </p>
