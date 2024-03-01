@@ -3,19 +3,14 @@ import '@fontsource/source-serif-pro/200.css';
 import '@fontsource/source-serif-pro/300.css';
 import '@fontsource/source-serif-pro/400.css';
 
-import { Image } from 'astro:assets';
 import heroImage from '../assets/Hero.webp';
 
 ---
 
-<section class='hero-container'>
+<section class='hero-container relative  min-h-[700px] bg-cover bg-no-repeat bg-center'
+style=`background-image: url("${heroImage.src}");`>
   <!-- <NavBar /> -->
-  <Image
-    src={heroImage}
-    alt='View of the hotel'
-    class='hero-image'
-    loading='eager'
-  />
+
   <div class='hero-text'>
     <small class='uppercase'>Welcome To</small>
     <h1>The Wellhall</h1>
@@ -36,7 +31,6 @@ import heroImage from '../assets/Hero.webp';
     align-items: center;
     justify-content: center;
     color: white;
-    position: relative;
 
     & .hero-text {
       position: absolute;
