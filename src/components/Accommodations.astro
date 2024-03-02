@@ -61,7 +61,7 @@ import whiteBathtub from '../assets/white-bathtub.webp';
       <Image
         src={deLuxeSeaView}
         alt='Woman by the pool'
-        class='object-cover w-full h-full'
+        class='object-cover w-full h-full inline-flex'
       />
 
       <div class='border border-1 border-brown-dark mt-6 p-3'>
@@ -75,11 +75,13 @@ import whiteBathtub from '../assets/white-bathtub.webp';
 
   <div class='grid grid-cols-1 md:grid-cols-3 gap-4 px-12 my-8 py-12'>
     <div class='md:col-span-1 flex flex-col'>
-      <Image
-        src={woodKitchen}
-        alt='De Luxe Sea View Room '
-        class='object-cover w-full h-full'
-      />
+      <div class="h-full">
+        <Image
+          src={woodKitchen}
+          alt='De Luxe Sea View Room '
+          class='object-cover w-full h-full inline-flex'
+        />
+      </div>
       <div class='border border-1 border-brown-dark mt-6 p-3 flex-1'>
         <small>
           An intriguing caption that describes the room goes here. Use a
@@ -92,7 +94,7 @@ import whiteBathtub from '../assets/white-bathtub.webp';
         <Image
           src={whiteBathtub}
           alt='De Luxe Sea View Room '
-          class='object-cover w-full h-full'
+          class='object-cover w-full h-full inline-flex'
         />
       </div>
 
